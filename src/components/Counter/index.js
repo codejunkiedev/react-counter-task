@@ -41,7 +41,7 @@ const Counter = ({ text, onClick }) => {
     return (
         <div className="d-flex justify-content-center mt-5">
             <div>
-                <div className="d-flex justify-content-center mb-4 my-2">
+                <div className="d-flex ml-8px mb-4 my-2">
                     <div className="mx-2">
                         <ButtonCounter text="-" filled onClick={() => handleAll(false)} />
                     </div>
@@ -54,7 +54,7 @@ const Counter = ({ text, onClick }) => {
                         <div className="mx-3">
                             <ButtonCounter text="-" onClick={() => handleSingle(val.id, false)} />
                         </div>
-                        <div className="mx-3">
+                        <div className="mx-3 w-20 text-center">
                             {val.value}
                         </div>
                         <div className="mx-3">
